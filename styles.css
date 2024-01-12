@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,300&family=Roboto+Condensed:wght@700&display=swap');
+
+:root {
+    --black: #0b090a;
+    --red-dark: #8B0000;
+    --gray: #bababa;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo__text {
+    font-family: 'Anton', sans-serif;
+    font-size: 8vw;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+body,
+p,
+a,
+li {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: var(--red-dark);
+    color: var(--white);
+}
+
+img {
+    width: 100%;
+}
+
+
+#header {
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-bottom: 10%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-img {
+    cursor: pointer;
+    width: 50%;
+    max-width: 250px;
+    padding-top: 1rem;
+}
+
+#nav-bar {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link-li {
+    list-style: none;
+    font-size: 4vw;
+}
+
+.nav-link-li a {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-link-li a:hover {
+    color: var(--red-dark);
+    cursor: pointer;
+}
+
+
+#main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero {
+    margin-bottom: 10vh;
+}
+
+.hero__banner {
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-position-y: 30%;
+    width: 100%;
+    height: 35vh;
+    margin-bottom: 1rem;
+}
+
+#title {
+    margin-bottom: 3%;
+}
+
+#text,
+.tutorial-text {
+    text-align: center;
+    font-weight: 700;
+}
+
+.embedded-video {
+    margin-bottom: 15vh;
+    background-color: var(--red-dark);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.tutorial-text {
+    margin-bottom: .8rem;
+}
+
+#video {
+    height: 315px;
+    width: 100%;
+}
+
+
+.services__title {
+    margin-bottom: 1.2rem;
+}
+
+section article {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 1rem 0;
+    margin-bottom: 4rem;
+}
+
+section article h3,
+section article img,
+section article p {
+    margin-bottom: .6rem;
+}
+
+section article p,
+#martial-arts article ul {
+    padding: 0 1.5rem;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.call-to-action p {
+    font-weight: 700;
+}
+
+.btn--join {
+    width: 30%;
+    max-width: 150px;
+    margin-top: .5rem;
+    padding: .4rem;
+    color: var(--white);
+    font-weight: 700;
+    background-color: var(--red-dark);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn--join:hover {
+    background-color: var(--black);
+    color: #f00;
+}
+
+#martial-arts article ul {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+#martial-arts article ul li {
+    margin-bottom: .4rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.input label {
+    display: block;
+    /* Mostrar las etiquetas en una nueva línea */
+    margin-bottom: .2rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: .3rem;
+    border: none;
+    outline-color: #f00;
+    border-radius: 3px;
+}
+
+#submit {
+    outline: none;
+    width: 30%;
+    max-width: 150px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#submit:hover {
+    color: #f00;
+    background-color: var(--black);
+}
+
+.footer {
+    background-color: var(--black);
+    margin-top: 3rem;
+    padding: 2rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-icons a i {
+    color: var(--white);
+    transform: scale(2);
+}
+
+.social-icons a i:hover {
+    color: var(--red-dark);
+}
+
+.footer__text {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 8vw;
+}
+
+
+@media (min-width: 425px) {
+    #header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+    }
+
+    #header-img {
+        width: 30%;
+        max-width: 100px;
+        padding: .5rem 0;
+    }
+
+    .logo__text {
+        font-size: 4vw;
+    }
+
+    #nav-bar {
+        flex: 1;
+        padding: 0;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-link-li {
+        font-size: 2.5vw;
+        margin-right: 1rem;
+    }
+
+    #main {
+        width: 90%;
+    }
+
+    .services section article,
+    .hero__banner {
+        border-radius: 5px;
+    }
+
+    .services section article img {
+        padding: 1rem;
+        border-radius: 6%;
+    }
+
+    .footer__text {
+        font-size: 7vw;
+    }
+}
+
+@media (min-width: 768px) {
+    #header {
+        margin-bottom: 6%;
+    }
+
+    #header-img {
+        width: 30%;
+        max-width: 100px;
+        padding: .5rem 0;
+    }
+
+    .logo__text {
+        font-size: 2rem;
+    }
+
+    .nav-link-li {
+        font-size: 1.2rem;
+    }
+
+    .hero__banner {
+        background-position-y: 40%;
+        height: 50vh;
+        margin-bottom: 1rem;
+    }
+
+    #title {
+        font-size: 6vw;
+    }
+
+    .hero__text #text,
+    .tutorial-text {
+        font-size: 3vw;
+    }
+
+    .services__title {
+        font-size: 4.5vw;
+    }
+
+    .services section article h3 {
+        font-size: 3.4vw;
+    }
+
+    .services section article p,
+    .services section article ul {
+        font-size: 2.6vw;
+    }
+
+    .btn--join {
+        transform: scale(1.2);
+        margin: 1.5rem 0 1rem;
+    }
+
+    #form {
+        font-size: 2.8vw;
+    }
+
+    .form__title {
+        font-size: 4.5vw;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 2vw;
+    }
+
+    .input input {
+        line-height: 2rem;
+    }
+
+    .input textarea {
+        line-height: 3rem;
+    }
+
+    #submit {
+        transform: scale(1.4);
+        margin-top: 1rem;
+    }
+
+    .footer__text {
+        font-size: 5vw;
+    }
+}
+
+@media (min-width: 768px) {
+    #header {
+        margin-bottom: 2.5rem;
+    }
+
+    .hero__banner {
+        background-position-y: 35%;
+        width: 100%;
+        height: 70vh;
+        margin-bottom: 1rem;
+    }
+
+    #main {
+        width: 80%;
+    }
+
+     #title {
+        font-size: 4rem;
+    }
+
+    .hero__text #text,
+    .tutorial-text {
+        font-size: 1.7rem;
+    }
+
+    #video {
+        height: 420px;
+        width: 100%;
+    }
+
+    .services__title {
+        font-size: 3rem;
+    }
+
+    .services section article h3 {
+        font-size: 2rem;
+    }
+
+    .services section article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services section article img {
+        max-width: 50%;
+    }
+
+    .services section article p,
+    .services section article ul {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+
+    .call-to-action {
+        width: 100%;
+    }
+
+    .form__title {
+        font-size: 3rem;
+    }
+
+    #form {
+        font-size: 1.7rem;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 1rem;
+    }
+
+    .footer__text {
+        font-size: 3rem;
+    }
+}
